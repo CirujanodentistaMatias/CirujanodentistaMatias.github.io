@@ -410,6 +410,54 @@
     .cta-section h2 { font-size: 26px; }
     .services-grid { grid-template-columns: 1fr 1fr; }
   }
+
+  /* ── PRECIOS ── */
+  .precios { background: var(--crema); }
+  .precios-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .precios-card {
+    background: white; border-radius: 24px;
+    border: 1px solid var(--borde); overflow: hidden;
+  }
+  .precios-card-header {
+    padding: 22px 24px; display: flex; align-items: center; gap: 12px;
+  }
+  .precios-card-header.estetica { background: linear-gradient(135deg, #E8F4FC, #d0eaf8); }
+  .precios-card-header.armonizacion { background: linear-gradient(135deg, #FDF0F6, #f5d0e4); }
+  .precios-card-icon { font-size: 24px; }
+  .precios-card-title { font-size: 18px; font-weight: 700; font-family: "Poppins", sans-serif; color: var(--texto); }
+  .precios-items { padding: 8px 0; }
+  .precio-item {
+    padding: 12px 24px; border-bottom: 1px solid var(--borde);
+    transition: background .15s;
+  }
+  .precio-item:last-child { border-bottom: none; }
+  .precio-item:hover { background: var(--crema); }
+  .precio-item.popular { background: #FFFBF0; border-left: 3px solid #F5A623; }
+  .precio-item.evaluacion { background: var(--crema); }
+  .precio-popular-badge {
+    font-size: 10px; font-weight: 700; color: #B07A00;
+    font-family: "Poppins", sans-serif; margin-bottom: 6px;
+    text-transform: uppercase; letter-spacing: .08em;
+  }
+  .precio-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+  .precio-name { font-size: 14px; font-weight: 500; color: var(--texto); margin-bottom: 2px; }
+  .precio-desc { font-size: 12px; color: var(--texto-suave); }
+  .precio-value {
+    font-size: 15px; font-weight: 700; font-family: "Poppins", sans-serif;
+    color: var(--azul); white-space: nowrap; flex-shrink: 0;
+  }
+  .precio-consulta { color: var(--rosa) !important; font-size: 13px !important; }
+  .precios-nota {
+    margin-top: 24px; padding: 16px 24px;
+    background: var(--azul-claro); border-radius: 16px;
+    font-size: 14px; color: var(--azul-oscuro); text-align: center;
+    border: 1px solid var(--azul-medio);
+  }
+  .precios-nota a { color: var(--azul-oscuro); font-weight: 600; }
+
+  @media (max-width: 900px) {
+    .precios-grid { grid-template-columns: 1fr; }
+  }
 </style>
 </head>
 <body>
@@ -433,6 +481,7 @@
     <li><a href="#servicios">Servicios</a></li>
     <li><a href="#equipo">Equipo</a></li>
     <li><a href="#resultados">Resultados</a></li>
+    <li><a href="#precios">Precios</a></li>
     <li><a href="#contacto">Contacto</a></li>
     <li><a href="#contacto" class="nav-cta">Agendar cita</a></li>
   </ul>
@@ -744,6 +793,211 @@
     </div>
   </div>
 </section>
+
+
+  <!-- ── PRECIOS ── -->
+  <section class="precios" id="precios">
+    <div class="section-label">Tarifas</div>
+    <div class="section-title">Precios claros, sin sorpresas</div>
+    <p class="section-desc">Porque creemos en la transparencia, aquí encuentras nuestros valores. Algunos tratamientos se evalúan en consulta para darte el mejor plan a tu medida.</p>
+
+    <div class="precios-grid">
+
+      <!-- ESTÉTICA DENTAL -->
+      <div class="precios-card">
+        <div class="precios-card-header estetica">
+          <div class="precios-card-icon">✨</div>
+          <div class="precios-card-title">Estética Dental</div>
+        </div>
+        <div class="precios-items">
+          <div class="precio-item popular">
+            <div class="precio-popular-badge">⭐ Más solicitado</div>
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Blanqueamiento dental</div>
+                <div class="precio-desc">1 sesión de ~1 hora</div>
+              </div>
+              <div class="precio-value">$80.000</div>
+            </div>
+          </div>
+          <div class="precio-item">
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Destartraje supragingival</div>
+                <div class="precio-desc">Incluye flúor, diagnóstico y radiografía</div>
+              </div>
+              <div class="precio-value">$30.000</div>
+            </div>
+          </div>
+          <div class="precio-item">
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Carillas de resina</div>
+                <div class="precio-desc">Por pieza</div>
+              </div>
+              <div class="precio-value">$50.000 – $70.000</div>
+            </div>
+          </div>
+          <div class="precio-item">
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Blanqueamiento intracameral</div>
+                <div class="precio-desc">Para dientes con endodoncia previa</div>
+              </div>
+              <div class="precio-value">$60.000</div>
+            </div>
+          </div>
+          <div class="precio-item evaluacion">
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Restauraciones, prótesis fija y removible</div>
+                <div class="precio-desc">Valor según evaluación personalizada</div>
+              </div>
+              <div class="precio-value precio-consulta">A consultar</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ARMONIZACIÓN OROFACIAL -->
+      <div class="precios-card">
+        <div class="precios-card-header armonizacion">
+          <div class="precios-card-icon">💉</div>
+          <div class="precios-card-title">Armonización Orofacial</div>
+        </div>
+        <div class="precios-items">
+
+          <div class="precio-item popular">
+            <div class="precio-popular-badge">⭐ Más solicitado</div>
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Bótox — 1 zona</div>
+                <div class="precio-desc">Entrecejo, frente o patas de gallo</div>
+              </div>
+              <div class="precio-value">$90.000</div>
+            </div>
+          </div>
+          <div class="precio-item">
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Bótox — 2 zonas</div>
+              </div>
+              <div class="precio-value">$130.000</div>
+            </div>
+          </div>
+          <div class="precio-item">
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Bótox — 3 zonas</div>
+              </div>
+              <div class="precio-value">$160.000</div>
+            </div>
+          </div>
+
+          <div class="precio-item popular">
+            <div class="precio-popular-badge">⭐ Más solicitado</div>
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Rinomodelación</div>
+                <div class="precio-desc">Sin cirugía, con ácido hialurónico</div>
+              </div>
+              <div class="precio-value">$150.000</div>
+            </div>
+          </div>
+
+          <div class="precio-item">
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Perfilado de labios</div>
+              </div>
+              <div class="precio-value">$170.000</div>
+            </div>
+          </div>
+          <div class="precio-item">
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Aumento de mentón</div>
+              </div>
+              <div class="precio-value">$240.000</div>
+            </div>
+          </div>
+          <div class="precio-item">
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Pómulos lifting</div>
+              </div>
+              <div class="precio-value">$240.000</div>
+            </div>
+          </div>
+          <div class="precio-item">
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Bioestimulador Sculptra</div>
+              </div>
+              <div class="precio-value">$400.000</div>
+            </div>
+          </div>
+          <div class="precio-item">
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Bioestimulador Radiesse</div>
+              </div>
+              <div class="precio-value">$400.000</div>
+            </div>
+          </div>
+          <div class="precio-item">
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Hilos revitalizantes</div>
+                <div class="precio-desc">20 hilos por lado</div>
+              </div>
+              <div class="precio-value">$200.000</div>
+            </div>
+          </div>
+          <div class="precio-item">
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Hilos tensores</div>
+              </div>
+              <div class="precio-value">$2.500.000</div>
+            </div>
+          </div>
+          <div class="precio-item">
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Endolaser — Zona cuello/papada</div>
+                <div class="precio-desc">Lipólisis y bioestimulación de colágeno</div>
+              </div>
+              <div class="precio-value">$680.000</div>
+            </div>
+          </div>
+          <div class="precio-item">
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Endolaser — Zona rostro</div>
+                <div class="precio-desc">Lipólisis y bioestimulación de colágeno</div>
+              </div>
+              <div class="precio-value">$680.000</div>
+            </div>
+          </div>
+          <div class="precio-item evaluacion">
+            <div class="precio-row">
+              <div>
+                <div class="precio-name">Full Face con ácido hialurónico</div>
+                <div class="precio-desc">Valor sujeto a evaluación personalizada</div>
+              </div>
+              <div class="precio-value precio-consulta">A consultar</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="precios-nota">
+      💬 ¿Tienes dudas sobre algún tratamiento? <a href="https://wa.me/56935308635" target="_blank">Escríbenos por WhatsApp</a> y te orientamos sin compromiso.
+    </div>
+  </section>
 
 <!-- ── CTA FINAL ── -->
 <section class="cta-section" id="contacto">
