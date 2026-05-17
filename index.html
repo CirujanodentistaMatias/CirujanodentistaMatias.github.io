@@ -176,20 +176,50 @@
   .section-title { font-size: 34px; font-weight: 700; margin-bottom: 14px; letter-spacing: -.6px; }
   .section-desc { font-size: 16px; color: var(--texto-suave); max-width: 580px; margin-bottom: 52px; line-height: 1.7; }
 
-  /* SERVICIOS */
-  .services { background: var(--blanco); }
-  .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-  .service-card {
-    background: var(--crema); border: 1px solid var(--borde);
-    border-radius: 20px; padding: 26px 22px;
-    transition: box-shadow .2s, transform .2s; cursor: pointer;
-    text-decoration: none; color: inherit;
-  }
-  .service-card:hover { box-shadow: 0 8px 32px rgba(77,170,223,.13); transform: translateY(-3px); }
-  .service-icon { font-size: 30px; margin-bottom: 14px; }
-  .service-name { font-size: 15px; font-weight: 600; font-family: 'Poppins', sans-serif; margin-bottom: 7px; color: var(--texto); }
-  .service-desc { font-size: 13px; color: var(--texto-suave); line-height: 1.6; }
-  .service-link { font-size: 12px; color: var(--azul); font-weight: 600; margin-top: 12px; display: block; }
+  <!-- ── SERVICIOS ── -->
+<section class="services" id="servicios">
+  <div class="section-label">Lo que ofrecemos</div>
+  <div class="section-title">Tratamientos a tu medida</div>
+  <p class="section-desc">En nuestra clínica dental en Valdivia ofrecemos desde odontología preventiva hasta transformaciones completas de sonrisa y armonización facial.</p>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon">✨</div>
+      <div class="service-name">Estética dental</div>
+      <div class="service-desc">Carillas, blanqueamiento y diseño de sonrisa para resultados naturales y duraderos.</div>
+      <span class="service-link">Ver más →</span>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">💉</div>
+      <div class="service-name">Armonización orofacial</div>
+      <div class="service-desc">Rellenos faciales, toxina botulínica y perfilado del mentón y labios con resultados naturales.</div>
+      <span class="service-link">Ver más →</span>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🔬</div>
+      <div class="service-name">Cirugía oral</div>
+      <div class="service-desc">Cirugías de terceros molares (muelas del juicio), cirugías complejas de tejidos blandos y procedimientos especializados.</div>
+      <span class="service-link">Ver más →</span>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🦷</div>
+      <div class="service-name">Odontología general</div>
+      <div class="service-desc">Limpiezas, obturaciones, tratamientos preventivos y revisiones completas para toda la familia.</div>
+      <span class="service-link">Ver más →</span>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">🦷</div>
+      <div class="service-name">Prótesis fija y removible</div>
+      <div class="service-desc">Rehabilitación oral con prótesis fija y removible de alta calidad para recuperar tu sonrisa.</div>
+      <span class="service-link">Ver más →</span>
+    </div>
+    <div class="service-card">
+      <div class="service-icon">👶</div>
+      <div class="service-name">Odontopediatría</div>
+      <div class="service-desc">Atención especializada para niños en un ambiente cálido, amigable y sin miedo.</div>
+      <span class="service-link">Ver más →</span>
+    </div>
+  </div>
+</section>
 
   /* EQUIPO */
   .equipo { background: var(--rosa-claro); }
