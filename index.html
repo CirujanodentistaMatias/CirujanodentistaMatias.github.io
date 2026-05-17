@@ -221,56 +221,491 @@
   </div>
 </section>
 
-  /* EQUIPO */
-  .equipo { background: var(--rosa-claro); }
-  .equipo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; width: 100%; }
-  .team-card {
-    border-radius: 24px; overflow: hidden;
-    border: 1px solid var(--borde); background: white;
-    transition: transform .2s, box-shadow .2s;
+  <!-- ── EQUIPO ── -->
+<section class="equipo" id="equipo">
+  <div class="section-label">Quiénes somos</div>
+  <div class="section-title">Nuestro equipo</div>
+  <p class="section-desc">Profesionales comprometidos con tu salud bucal y bienestar, con formación de alto nivel y atención personalizada.</p>
+  <div class="equipo-grid">
+
+    <!-- Dr. Matías Guerra -->
+    <div class="team-card">
+      <div class="team-photo matias">
+        <img src="data:image/jpeg;base64,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" alt="Blanqueamiento dental" style="width:100%;height:100%;object-fit:cover;">
+    </div>
+  </div>
+</section>
+
+<!-- ── TRUST BAR ── -->
+<div class="trust-bar">
+  <div class="trust-item">
+    <div class="trust-icon-wrap">🦷</div>
+    <div class="trust-text">
+      <div class="t-num">2.000+</div>
+      <div class="t-lbl">Pacientes felices</div>
+    </div>
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon-wrap">🏅</div>
+    <div class="trust-text">
+      <div class="t-num">Dr. Matías Guerra</div>
+      <div class="t-lbl">Cirujano Dentista</div>
+    </div>
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon-wrap">🏥</div>
+    <div class="trust-text">
+      <div class="t-num">Infraestructura</div>
+      <div class="t-lbl">2 boxes modernos</div>
+    </div>
+  </div>
+  <div class="trust-item">
+    <div class="trust-icon-wrap">📍</div>
+    <div class="trust-text">
+      <div class="t-num">Ubicación Central</div>
+      <div class="t-lbl">Lautaro 175, Valdivia</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── SERVICIOS ── -->
+<section class="services" id="servicios">
+  <div class="section-label">Lo que ofrecemos</div>
+  <div class="section-title">Tratamientos a tu medida</div>
+  <p class="section-desc">En nuestra clínica dental en Valdivia ofrecemos desde odontología preventiva hasta transformaciones completas de sonrisa y armonización facial.</p>
+  <div class="services-grid">
+    <a class="service-card" href="#contacto">
+      <div class="service-icon">✨</div>
+      <div class="service-name">Estética dental</div>
+      <div class="service-desc">Carillas de resina y porcelana, blanqueamiento dental de alta eficacia y blanqueamiento intracameral.</div>
+      <span class="service-link">Ver más →</span>
+    </a>
+    <a class="service-card" href="#contacto">
+      <div class="service-icon">💉</div>
+      <div class="service-name">Armonización orofacial</div>
+      <div class="service-desc">Especialidad en bótox, ácido hialurónico, bioestimulación de colágeno y perfilado facial o lipopapada con Endolaser.</div>
+      <span class="service-link">Ver más →</span>
+    </a>
+    <a class="service-card" href="#contacto">
+      <div class="service-icon">🔬</div>
+      <div class="service-name">Cirugía oral</div>
+      <div class="service-desc">Cirugías complejas de terceros molares (muelas del juicio) y extracciones dentales complejas sin dolor.</div>
+      <span class="service-link">Ver más →</span>
+    </a>
+    <a class="service-card" href="#contacto">
+      <div class="service-icon">🦷</div>
+      <div class="service-name">Endodoncia</div>
+      <div class="service-desc">Tratamientos de conducto especializados para piezas anteriores y premolares, eliminando la infección de raíz.</div>
+      <span class="service-link">Ver más →</span>
+    </a>
+    <a class="service-card" href="#contacto">
+      <div class="service-icon">🦷</div>
+      <div class="service-name">Rehabilitación oral</div>
+      <div class="service-desc">Prótesis fijas unitarias sobre diente (coronas o incrustaciones) y prótesis removibles de alta calidad.</div>
+      <span class="service-link">Ver más →</span>
+    </a>
+    <a class="service-card" href="#contacto">
+      <div class="service-icon">👶</div>
+      <div class="service-name">Odontología general</div>
+      <div class="service-desc">Limpiezas profundas, obturaciones, prevención y diagnóstico integral para cuidar tu salud bucal.</div>
+      <span class="service-link">Ver más →</span>
+    </a>
+  </div>
+</section>
+
+<!-- ── EQUIPO ── -->
+<section class="equipo" id="equipo">
+  <div class="section-label">Quiénes somos</div>
+  <div class="section-title">Nuestro equipo</div>
+  <p class="section-desc">Profesionales comprometidos con tu salud bucal y bienestar, con formación de alto nivel y atención personalizada.</p>
+  <div class="equipo-grid">
+
+    <!-- Dr. Matías Guerra -->
+    <div class="team-card">
+      <div class="team-photo matias">
+        <div class="photo-avatar avatar-azul">MG</div>
+        <div class="photo-label">Dr. Matías Guerra</div>
+        <div class="photo-badge">Disponible</div>
+      </div>
+      <div class="team-info">
+        <div class="director-badge">⭐ Director clínico</div>
+        <div class="team-name">Dr. Matías Guerra</div>
+        <div class="team-title">Cirujano Dentista</div>
+        <div class="team-tags">
+          <span class="team-tag tag-azul">Cirugía oral</span>
+          <span class="team-tag tag-morado">Armonización Orofacial</span>
+          <span class="team-tag tag-azul">Estética dental</span>
+        </div>
+        <div class="team-divider"></div>
+        <div class="team-desc">Especialista en cirugía oral, extracciones complejas de muelas del juicio y alta estética facial (bótox, ácido hialurónico, bioestimulación y lifting con Endolaser).</div>
+      </div>
+    </div>
+
+    <!-- Dra. Yulissa Cárdenas -->
+    <div class="team-card">
+      <div class="team-photo yulissa">
+        <div class="photo-avatar avatar-rosa">YC</div>
+        <div class="photo-label">Dra. Yulissa Cárdenas</div>
+      </div>
+      <div class="team-info">
+        <div class="team-name">Dra. Yulissa Cárdenas</div>
+        <div class="team-title">Cirujano Dentista</div>
+        <div class="team-tags">
+          <span class="team-tag tag-azul">Odontología General</span>
+          <span class="team-tag tag-rosa">Estética Dental</span>
+        </div>
+        <div class="team-divider"></div>
+        <div class="team-desc">Cirujano dentista dedicada a la odontología general, restauraciones estéticas, prevención y tratamientos integrales para toda la familia.</div>
+      </div>
+    </div>
+
+    <!-- Dra. Odeth Espinoza -->
+    <div class="team-card">
+      <div class="team-photo odeth">
+        <div class="photo-avatar avatar-verde">OE</div>
+        <div class="photo-label">Dra. Odeth Espinoza</div>
+      </div>
+      <div class="team-info">
+        <div class="team-name">Dra. Odeth Espinoza</div>
+        <div class="team-title">Cirujano Dentista</div>
+        <div class="team-tags">
+          <span class="team-tag tag-verde">Endodoncia</span>
+          <span class="team-tag tag-azul">Odontología General</span>
+        </div>
+        <div class="team-divider"></div>
+        <div class="team-desc">Especialista en tratamientos de conducto (endodoncias) en dientes anteriores y premolares, enfocada en salvar piezas dentales y aliviar el dolor.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── ANTES / DESPUÉS ── -->
+<section class="before-after" id="resultados">
+  <div class="section-label">Resultados reales</div>
+  <div class="section-title">Transformaciones de nuestros pacientes</div>
+  <p class="section-desc">Casos reales tratados en Clínica Más. Cada resultado es único y personalizado para cada paciente.</p>
+  <div class="ba-grid">
+
+    <div class="ba-card">
+      <div class="ba-images">
+        <div class="ba-img before">ANTES</div>
+        <div class="ba-img after">DESPUÉS</div>
+      </div>
+      <div class="ba-divider-wrap"><div class="ba-line"></div><div class="ba-pill">Estética Facial</div><div class="ba-line"></div></div>
+      <div class="ba-label">
+        <div class="ba-title">Armonización con Endolaser</div>
+        <div class="ba-sub">Lipopapada y reestructuración de grasa facial</div>
+      </div>
+    </div>
+
+    <div class="ba-card">
+      <div class="ba-images">
+        <div class="ba-img before">ANTES</div>
+        <div class="ba-img after">DESPUÉS</div>
+      </div>
+      <div class="ba-divider-wrap"><div class="ba-line"></div><div class="ba-pill">Estética Dental</div><div class="ba-line"></div></div>
+      <div class="ba-label">
+        <div class="ba-title">Diseño de sonrisa</div>
+        <div class="ba-sub">Carillas de alta resistencia y blanqueamiento</div>
+      </div>
+    </div>
+
+    <div class="ba-card">
+      <div class="ba-images">
+        <div class="ba-img before">ANTES</div>
+        <div class="ba-img after">DESPUÉS</div>
+      </div>
+      <div class="ba-divider-wrap"><div class="ba-line"></div><div class="ba-pill">Medicina Estética</div><div class="ba-line"></div></div>
+      <div class="ba-label">
+        <div class="ba-title">Perfilado de labios & Bótox</div>
+        <div class="ba-sub">Relleno con ácido hialurónico y toxina botulínica</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Swarovski highlight -->
+  <div style="margin-top:24px; background:linear-gradient(135deg,#FDF0F6,#E8F4FC); border-radius:20px; padding:24px 28px; display:flex; align-items:center; gap:24px; border:1px solid #EDE8E6;">
+    <div style="flex:1;">
+      <div style="font-size:11px;font-weight:600;color:#993556;text-transform:uppercase;letter-spacing:.12em;margin-bottom:6px;">Servicio exclusivo</div>
+      <div style="font-size:18px;font-weight:700;font-family:Poppins,sans-serif;margin-bottom:6px;">Cristales Swarovski dental 💎</div>
+      <div style="font-size:14px;color:#6B6B6B;">Decora tu sonrisa con cristales Swarovski originales colocados por profesionales. Un detalle único, elegante y seguro para tu esmalte.</div>
+    </div>
+  </div>
+
+  <p class="ba-disclaimer">* Resultados individuales pueden variar. Imágenes publicadas con consentimiento de los pacientes.</p>
+</section>
+
+<!-- ── PROCESO ── -->
+<section class="proceso">
+  <div class="section-label">¿Cómo funciona?</div>
+  <div class="section-title">Tu camino hacia la sonrisa perfecta</div>
+  <p class="section-desc">En nuestra clínica en Valdivia, el proceso es simple, transparente y enfocado en ti desde el primer contacto.</p>
+  <div class="proceso-steps">
+    <div class="proceso-step">
+      <div class="step-num">1</div>
+      <div class="step-title">Agenda tu consulta</div>
+      <div class="step-desc">Escríbenos por WhatsApp o completa el formulario. Te responderemos a la brevedad para coordinar.</div>
+    </div>
+    <div class="proceso-step">
+      <div class="step-num">2</div>
+      <div class="step-title">Evaluación personalizada</div>
+      <div class="step-desc">Revisamos tu caso en detalle, analizamos tus facciones o salud bucal y diseñamos un plan a tu medida.</div>
+    </div>
+    <div class="proceso-step">
+      <div class="step-num">3</div>
+      <div class="step-title">Tratamiento de excelencia</div>
+      <div class="step-desc">Ejecutamos el tratamiento con tecnología de punta, de forma segura, profesional y completamente sin dolor.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRECIOS ── -->
+<section class="precios" id="precios">
+  <div class="section-label">Tarifas</div>
+  <div class="section-title">Valores de referencia claros</div>
+  <p class="section-desc">Creemos en la honestidad. Aquí encuentras valores de referencia para nuestros tratamientos principales. Los planes definitivos se entregan tras la evaluación clínica.</p>
+
+  <div class="precios-grid">
+    <!-- ODONTOLOGÍA Y ESTÉTICA DENTAL -->
+    <div class="precios-card">
+      <div class="precios-card-header estetica">
+        <div class="precios-card-icon">🦷</div>
+        <div class="precios-card-title">Odontología & Estética Dental</div>
+      </div>
+      <div class="precios-items">
+        <div class="precio-item popular">
+          <div class="precio-popular-badge">⭐ Muy solicitado</div>
+          <div class="precio-row">
+            <div>
+              <div class="precio-name">Blanqueamiento dental clínico</div>
+              <div class="precio-desc">Sonrisa más blanca en una sesión de alta eficacia</div>
+            </div>
+            <div class="precio-value">$80.000</div>
+          </div>
+        </div>
+        <div class="precio-item">
+          <div class="precio-row">
+            <div>
+              <div class="precio-name">Limpieza dental profunda (Destartraje)</div>
+              <div class="precio-desc">Eliminación de sarro, pulido e higiene integral</div>
+            </div>
+            <div class="precio-value">$30.000</div>
+          </div>
+        </div>
+        <div class="precio-item">
+          <div class="precio-row">
+            <div>
+              <div class="precio-name">Blanqueamiento intracameral</div>
+              <div class="precio-desc">Por diente (para piezas oscurecidas post-endodoncia)</div>
+            </div>
+            <div class="precio-value">$60.000</div>
+          </div>
+        </div>
+        <div class="precio-item evaluacion">
+          <div class="precio-row">
+            <div>
+              <div class="precio-name">Cirugía de muelas del juicio & Endodoncias</div>
+              <div class="precio-desc">Extracciones complejas y tratamientos de conducto</div>
+            </div>
+            <div class="precio-value precio-consulta">Según evaluación</div>
+          </div>
+        </div>
+        <div class="precio-item evaluacion">
+          <div class="precio-row">
+            <div>
+              <div class="precio-name">Carillas, coronas fijas & Prótesis</div>
+              <div class="precio-desc">Rehabilitación oral personalizada de alta resistencia</div>
+            </div>
+            <div class="precio-value precio-consulta">Según evaluación</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARMONIZACIÓN OROFACIAL -->
+    <div class="precios-card">
+      <div class="precios-card-header armonizacion">
+        <div class="precios-card-icon">✨</div>
+        <div class="precios-card-title">Armonización Orofacial</div>
+      </div>
+      <div class="precios-items">
+        <div class="precio-item">
+          <div class="precio-row">
+            <div>
+              <div class="precio-name">Toxina botulínica (Bótox) — 1 zona</div>
+              <div class="precio-desc">Frente, entrecejo o patas de gallo</div>
+            </div>
+            <div class="precio-value">$90.000</div>
+          </div>
+        </div>
+        <div class="precio-item">
+          <div class="precio-row">
+            <div>
+              <div class="precio-name">Toxina botulínica (Bótox) — 2 zonas</div>
+              <div class="precio-desc">Suavizado de líneas de expresión</div>
+            </div>
+            <div class="precio-value">$130.000</div>
+          </div>
+        </div>
+        <div class="precio-item popular">
+          <div class="precio-popular-badge">⭐ Recomendado completo</div>
+          <div class="precio-row">
+            <div>
+              <div class="precio-name">Toxina botulínica (Bótox) — 3 zonas</div>
+              <div class="precio-desc">Rostro completo descansado y rejuvenecido</div>
+            </div>
+            <div class="precio-value">$160.000</div>
+          </div>
+        </div>
+        <div class="precio-item">
+          <div class="precio-row">
+            <div>
+              <div class="precio-name">Rinomodelación</div>
+              <div class="precio-desc">Perfilado nasal sin cirugía con ácido hialurónico</div>
+            </div>
+            <div class="precio-value">$150.000</div>
+          </div>
+        </div>
+        <div class="precio-item">
+          <div class="precio-row">
+            <div>
+              <div class="precio-name">Perfilado de labios / Relleno</div>
+              <div class="precio-desc">Ácido hialurónico premium volumen y definición</div>
+            </div>
+            <div class="precio-value">$170.000</div>
+          </div>
+        </div>
+        <div class="precio-item">
+          <div class="precio-row">
+            <div>
+              <div class="precio-name">Aumento de mentón o pómulos lifting</div>
+              <div class="precio-desc">Estructuración y armonización de facciones</div>
+            </div>
+            <div class="precio-value">$240.000</div>
+          </div>
+        </div>
+        <div class="precio-item">
+          <div class="precio-row">
+            <div>
+              <div class="precio-name">Hilos tensores y revitalizantes</div>
+              <div class="precio-desc">Firmeza y estimulación natural de colágeno</div>
+            </div>
+            <div class="precio-value">$200.000 - $250.000</div>
+          </div>
+        </div>
+        <div class="precio-item">
+          <div class="precio-row">
+            <div>
+              <div class="precio-name">Bioestimuladores (Sculptra / Radiesse)</div>
+              <div class="precio-desc">Recupera la elasticidad y juventud profunda de la piel</div>
+            </div>
+            <div class="precio-value">$400.000</div>
+          </div>
+        </div>
+        <div class="precio-item popular">
+          <div class="precio-popular-badge">🔥 Tecnología avanzada</div>
+          <div class="precio-row">
+            <div>
+              <div class="precio-name">Endolaser — Lipopapada o Lifting Facial</div>
+              <div class="precio-desc">Remoción de grasa localizada y tensado sin cirugías invasivas</div>
+            </div>
+            <div class="precio-value">$680.000</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="precios-nota">
+    📌 ¿Quieres una cotización exacta? Agenda tu hora. El valor definitivo se adapta a tu anatomía y necesidades específicas.
+  </div>
+</section>
+
+<!-- ── CTA FINAL ── -->
+<section class="cta-section" id="contacto">
+  <h2>¿Listo para agendar en Clínica Más?</h2>
+  <p class="cta-sub">Atención profesional en el corazón de Valdivia. Cupos limitados.</p>
+  <div class="cta-form">
+    <div class="cta-form-row">
+      <input class="form-input" id="form-nombre" type="text" placeholder="Tu nombre completo">
+      <input class="form-input" id="form-telefono" type="tel" placeholder="WhatsApp / Teléfono">
+    </div>
+    <select class="form-select" id="form-servicio">
+      <option value="">¿Qué tratamiento te interesa?</option>
+      <option value="Estética dental y Blanqueamiento">Estética dental / Blanqueamiento</option>
+      <option value="Armonización Orofacial y Bótox">Armonización Orofacial (Bótox, Ácido Hialurónico, Endolaser)</option>
+      <option value="Cirugía Oral y Muelas del juicio">Cirugía Oral (Muelas del juicio, Extracciones)</option>
+      <option value="Endodoncia o Tratamiento de conducto">Endodoncia / Tratamiento de conducto</option>
+      <option value="Rehabilitación y Prótesis">Rehabilitación Oral / Prótesis</option>
+      <option value="Limpieza y Consulta General">Limpieza dental / Consulta General</option>
+    </select>
+    <input class="form-input" id="form-mensaje" type="text" placeholder="¿Alguna duda o comentario? (Opcional)">
+    <button class="btn-submit" type="button" onclick="enviarFormulario()">Enviar consulta por WhatsApp →</button>
+    <div class="form-wa-alt">
+      O si prefieres, escríbenos directamente haciendo clic en el botón flotante.
+    </div>
+  </div>
+</section>
+
+<script>
+function enviarFormulario() {
+  const nombre = document.getElementById('form-nombre').value.trim();
+  const telefono = document.getElementById('form-telefono').value.trim();
+  const servicio = document.getElementById('form-servicio').value;
+  const mensaje = document.getElementById('form-mensaje').value.trim();
+
+  if(!nombre || !telefono) {
+    alert('Por favor, ingresa al menos tu nombre y teléfono para poder coordinar tu hora.');
+    return;
   }
-  .team-card:hover { transform: translateY(-5px); box-shadow: 0 14px 40px rgba(77,170,223,.14); }
-  .team-photo {
-    width: 100%; aspect-ratio: 1/1;
-    display: flex; flex-direction: column; align-items: center; justify-content: center;
-    gap: 10px; position: relative; overflow: hidden;
+
+  let textoWhatsApp = `Hola Clínica Más, me comunico desde la página web. Mi nombre es ${nombre} (Tel: ${telefono}).`;
+  if(servicio) {
+    textoWhatsApp += ` Estoy interesado en el servicio de: ${servicio}.`;
   }
-  .team-photo.matias   { background: linear-gradient(160deg, #d0eaf8 0%, #b8dff5 100%); }
-  .team-photo.yulisa  { background: linear-gradient(160deg, #f5d0e4 0%, #f0b8d4 100%); }
-  .team-photo.odeth    { background: linear-gradient(160deg, #d8f0e8 0%, #b8e4d0 100%); }
-  .photo-avatar {
-    width: 76px; height: 76px; border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 28px; font-weight: 700; font-family: 'Poppins', sans-serif;
-    border: 3px solid rgba(255,255,255,.85);
+  if(mensaje) {
+    textoWhatsApp += ` Nota adicional: ${mensaje}`;
   }
-  .avatar-azul  { background: rgba(77,170,223,.28);  color: #1a6faa; }
-  .avatar-rosa  { background: rgba(232,160,192,.28); color: #a03070; }
-  .avatar-verde { background: rgba(77,183,140,.28);  color: #0f6e56; }
-  .photo-label { font-size: 11px; font-weight: 600; opacity: .55; font-family: 'Poppins', sans-serif; letter-spacing: .05em; color: var(--texto); }
-  .photo-badge {
-    position: absolute; top: 12px; right: 12px;
-    background: rgba(255,255,255,.88); border-radius: 20px; padding: 4px 10px;
-    font-size: 10px; font-weight: 600; color: var(--texto-suave);
-    font-family: 'Poppins', sans-serif; border: 1px solid var(--borde);
-  }
-  .team-info { padding: 22px 22px 24px; }
-  .team-name { font-size: 17px; font-weight: 700; margin-bottom: 4px; font-family: 'Poppins', sans-serif; }
-  .team-title { font-size: 13px; color: var(--azul); font-weight: 500; margin-bottom: 12px; }
-  .team-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
-  .team-tag { font-size: 11px; padding: 4px 11px; border-radius: 22px; font-weight: 500; border: 1px solid; }
-  .tag-azul   { background: var(--azul-claro); color: #185FA5; border-color: var(--azul-medio); }
-  .tag-rosa   { background: var(--rosa-claro); color: #993556; border-color: #ED93B1; }
-  .tag-verde  { background: #E5F6F1; color: #0F6E56; border-color: #9FE1CB; }
-  .tag-morado { background: #F3EEF9; color: #534AB7; border-color: #CECBF6; }
-  .team-divider { height: 1px; background: var(--borde); margin: 12px 0; }
-  .team-desc { font-size: 13px; color: var(--texto-suave); line-height: 1.65; }
-  .director-badge {
-    display: inline-flex; align-items: center; gap: 6px;
-    background: var(--azul); color: white;
-    font-size: 10px; font-weight: 700; padding: 4px 11px;
-    border-radius: 11px; font-family: 'Poppins', sans-serif; margin-bottom: 8px;
-  }
+
+  const url = "https://wa.me/56935308635?text=" + encodeURIComponent(textoWhatsApp);
+  window.open(url, '_blank');
+}
+</script>
+
+<!-- SEO Local -->
+<div style="display:none;" aria-hidden="true">
+Dentista Valdivia, clínica dental Valdivia, blanqueamiento dental Valdivia, limpieza dental Valdivia, 
+cirugía dental Valdivia, muela del juicio Valdivia, armonización orofacial Valdivia, 
+medicina estética Valdivia, rinomodelación Valdivia, prótesis dental Valdivia,
+Dr. Matías Guerra dentista Valdivia, Clínica Más Valdivia, lipopapada endolaser valdivia, botox valdivia, acido hialuronico valdivia, endodoncia valdivia.
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-logo">Clínica Más · Especialidades Odontológicas</div>
+  <div class="footer-info">
+    Lautaro 175, Galería Lautaro, Oficinas 1 y 2, Valdivia, Chile<br>
+    📞 +56 9 3530 8635 · Atención de Lunes a Viernes (Previa Coordinación)
+  </div>
+  <div class="footer-links">
+    <a href="#servicios">Servicios</a>
+    <a href="#equipo">Equipo</a>
+    <a href="#resultados">Resultados</a>
+    <a href="#precios">Precios</a>
+  </div>
+  <div class="footer-copy">© 2026 Clínica Más · Dr. Matías Guerra. Todos los derechos reservados.</div>
+</footer>
+
+<!-- ── WHATSAPP FLOTANTE ── -->
+<a href="https://wa.me/56935308635?text=Hola%20Dr.%20Mat%C3%ADas%20Guerra,%20me%20gustar%C3%ADa%20agendar%20una%20hora%20en%20Cl%C3%ADnica%20M%C3%A1s" target="_blank" class="wa-float" title="Escríbenos por WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.706 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" fill="currentColor"/>
+  </svg>
+</a>
+
+</body>
+</html>
 
   /* ANTES / DESPUÉS */
   .before-after { background: var(--blanco); }
